@@ -1,0 +1,16 @@
+esto me funciono pa crear alertas
+// Estado de las alertas
+const isSuccessAlertOpen = ref(false);
+const isErrorAlertOpen = ref(false);
+
+// Función para manejar la creación de cuenta
+const handleCreateAccount = () => {
+  // aqui hay que poner para que se registre en algun lado
+  const success = Math.random() > 0.5; // Simulación de éxito o error
+
+  if (success) {
+    isSuccessAlertOpen.value = true; 
+  } else {
+    isErrorAlertOpen.value = true; 
+  }
+};
