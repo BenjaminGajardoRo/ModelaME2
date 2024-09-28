@@ -31,7 +31,7 @@
 
       <!-- MODELOS SE SUPONE QUE ESTO ES UN COMPONENTE PERO POR MIENTRAS PARA TESTEAR -->
       <div class="model-grid">
-        <ion-card v-for="model in filteredModels" :key="model.name">
+        <ion-card class="custom-card" v-for="model in filteredModels" :key="model.name">
           <img class="card-image" :alt="model.name" :src="model.img" />
           <ion-card-header>
             <ion-card-title>{{ model.name }}</ion-card-title>
